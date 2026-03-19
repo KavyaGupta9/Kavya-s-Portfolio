@@ -110,6 +110,11 @@ a {
   padding-top: 34px;
 }
 
+.hero-aside {
+  display: grid;
+  gap: 18px;
+}
+
 .hero-copy,
 .hero-card,
 .panel,
@@ -215,6 +220,21 @@ h3 {
   justify-content: space-between;
   padding: 30px;
   border-radius: var(--radius-lg);
+}
+
+.hero-portrait {
+  overflow: hidden;
+  padding: 12px;
+  border-radius: var(--radius-lg);
+}
+
+.portrait-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 22px;
 }
 
 .card-label,
