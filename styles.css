@@ -113,6 +113,7 @@ a {
 .hero-aside {
   display: grid;
   gap: 18px;
+  align-content: start;
 }
 
 .hero-copy,
@@ -224,16 +225,18 @@ h3 {
 
 .hero-portrait {
   overflow: hidden;
-  padding: 12px;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 10px;
   border-radius: var(--radius-lg);
 }
 
 .portrait-image {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 18%;
   border-radius: 22px;
 }
 
@@ -401,6 +404,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .hero-portrait {
+    max-width: 320px;
+  }
+
   .timeline-meta {
     position: static;
     padding: 0 0 0 18px;
@@ -433,5 +440,9 @@ h3 {
   .contact-card,
   .timeline-content {
     padding: 22px;
+  }
+
+  .hero-portrait {
+    max-width: 280px;
   }
 }
