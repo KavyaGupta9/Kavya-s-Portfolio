@@ -284,11 +284,13 @@ h3 {
 .section-heading {
   display: grid;
   gap: 6px;
-  max-width: 760px;
+  max-width: none;
 }
 
 .section-heading h2 {
   max-width: none;
+  font-size: clamp(1.95rem, 2.7vw, 2.9rem);
+  line-height: 1.05;
 }
 
 .about-grid {
@@ -487,19 +489,15 @@ h3 {
 
 @media (min-width: 981px) {
   .section-grid {
-    grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
-    column-gap: 28px;
+    grid-template-columns: 1fr;
+    column-gap: 0;
     row-gap: 14px;
     align-items: start;
   }
 
   .section-grid > .section-heading {
     grid-column: 1;
-    max-width: 320px;
-  }
-
-  .section-grid > :not(.section-heading) {
-    grid-column: 2;
+    max-width: none;
   }
 }
 
