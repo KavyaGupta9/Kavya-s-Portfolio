@@ -99,7 +99,7 @@ a {
 }
 
 .section {
-  padding: 38px 0;
+  padding: 30px 0;
 }
 
 .hero {
@@ -157,7 +157,7 @@ h1 {
 }
 
 h2 {
-  max-width: 14ch;
+  max-width: 18ch;
   font-size: clamp(2rem, 4vw, 3.3rem);
 }
 
@@ -278,18 +278,23 @@ h3 {
 
 .section-grid {
   display: grid;
-  gap: 26px;
+  gap: 18px;
 }
 
 .section-heading {
   display: grid;
-  gap: 8px;
+  gap: 6px;
+  max-width: 760px;
+}
+
+.section-heading h2 {
+  max-width: none;
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: 18px;
 }
 
 .projects-grid,
@@ -297,7 +302,7 @@ h3 {
 .case-insights-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: 18px;
 }
 
 .panel,
@@ -379,7 +384,7 @@ h3 {
 }
 
 .bullet-list {
-  margin: 16px 0 0;
+  margin: 12px 0 0;
   padding-left: 18px;
   color: var(--muted);
   line-height: 1.7;
@@ -394,14 +399,14 @@ h3 {
 
 .timeline {
   display: grid;
-  gap: 18px;
-  margin-top: 26px;
+  gap: 14px;
+  margin-top: 16px;
 }
 
 .timeline-item {
   display: grid;
   grid-template-columns: 180px minmax(0, 1fr);
-  gap: 18px;
+  gap: 14px;
   align-items: start;
 }
 
@@ -424,7 +429,7 @@ h3 {
 }
 
 .contact-section {
-  padding-bottom: 24px;
+  padding-bottom: 16px;
 }
 
 .contact-card {
