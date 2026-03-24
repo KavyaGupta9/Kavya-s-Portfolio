@@ -302,10 +302,16 @@ h3 {
   max-width: 100%;
 }
 
-.case-study-grid,
 .education-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 18px;
   align-items: start;
 }
@@ -327,6 +333,13 @@ h3 {
   display: grid;
   align-content: start;
   gap: 16px;
+}
+
+.education-item {
+  display: grid;
+  gap: 4px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(29, 35, 48, 0.08);
 }
 
 .case-study-subtitle {
