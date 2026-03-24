@@ -295,6 +295,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  align-items: start;
 }
 
 .projects-grid,
@@ -303,6 +304,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  align-items: start;
 }
 
 .panel,
@@ -481,6 +483,24 @@ h3 {
 .js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (min-width: 981px) {
+  .section-grid {
+    grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+    column-gap: 28px;
+    row-gap: 14px;
+    align-items: start;
+  }
+
+  .section-grid > .section-heading {
+    grid-column: 1;
+    max-width: 320px;
+  }
+
+  .section-grid > :not(.section-heading) {
+    grid-column: 2;
+  }
 }
 
 @media (max-width: 980px) {
