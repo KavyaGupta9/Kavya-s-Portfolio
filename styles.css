@@ -314,6 +314,23 @@ h3 {
   gap: 12px;
 }
 
+.case-study-card {
+  gap: 16px;
+  background:
+    linear-gradient(180deg, rgba(255, 252, 247, 0.92) 0%, rgba(255, 248, 241, 0.82) 100%);
+}
+
+.case-study-card h3 {
+  font-size: 1.56rem;
+  line-height: 1.08;
+}
+
+.case-study-card > p:not(.project-tag),
+.case-study-block p,
+.insight-card p {
+  font-size: 1rem;
+}
+
 .project-tag,
 .case-study-label {
   margin: 0;
@@ -327,11 +344,37 @@ h3 {
 .case-study-block {
   display: grid;
   gap: 8px;
-  padding-top: 10px;
+  padding: 14px 16px 0;
   border-top: 1px solid rgba(31, 36, 48, 0.08);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 250, 242, 0.24) 100%);
 }
 
 .case-study-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  color: #345049;
+  background: rgba(135, 162, 148, 0.2);
+  border: 1px solid rgba(135, 162, 148, 0.24);
+}
+
+.case-study-block .bullet-list {
+  margin-top: 2px;
+}
+
+.insight-card {
+  background:
+    linear-gradient(180deg, rgba(255, 252, 247, 0.9) 0%, rgba(248, 243, 236, 0.86) 100%);
+}
+
+.insight-card .detail-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.16rem;
   color: var(--accent-dark);
 }
 
